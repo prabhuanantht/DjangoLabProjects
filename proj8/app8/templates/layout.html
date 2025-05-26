@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{% block title %} Student List Downloader {% endblock %}</title>
+    </head>
+    <body>
+        {% block content %}
+        <center>
+            <h1> Student List Downloader </h1>
+            <a href="{% url 'student-list'%}"> Student List </a>
+            <p>
+            <a href="{% url 'csv-download'%}"> Download CSV </a>
+            <p>
+            <a href="{% url 'pdf-download'%}"> Download PDF </a> 
+        </center>
+        {% endblock %}
+    </body>
+</html>

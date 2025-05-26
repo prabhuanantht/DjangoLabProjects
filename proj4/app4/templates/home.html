@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block title %}Homepage{% endblock %}
+{% block content %}
+<h1>Welcome to Course Registration System</h1>
+<ul>
+    <li><a href="{% url 'register' %}">Register Student</a></li>
+    <li><a href="{% url 'enrollmentlist' %}">Check Enrolled Students</a></li>
+    <li><a href="{% url 'studentlist' %}">List All Students</a></li>
+    <li><a href="{% url 'courselist' %}">List All Courses</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{% block title %}Student Course Registration Portal{% endblock %}</title>
+    </head>
+    <body>
+        <header><center>Student Course Registration Portal</center></header>
+        <nav style = "background-color:lightblue; padding: 20px; border-bottom: 1px; justify-content:center">
+                <a href="/home/" style= "margin-right:10px; margin-left:10px;"> Home </a>  |  
+                <a href="/studentlist/" style= "margin-right:10px; margin-left:10px;"> Student List </a>  | 
+                <a href="/courselist/" style= "margin-right:10px; margin-left:10px;"> Course List </a>  |  
+                <a href="/register/" style= "margin-right:10px; margin-left:10px;"> Register </a>  |  
+                <a href="/enrollmentlist/" style= "margin-right:10px; margin-left:10px;"> Enrolled List </a>
+
+        </nav>
+        <div style = "min-height:85%">
+            {% block content %} Hello {% endblock %}
+        </div>
+        <footer>
+            <center> <hr> &copy; Designed and Developed by Ananth </hr> </center>
+        </footer>
+    </body>
+</html>

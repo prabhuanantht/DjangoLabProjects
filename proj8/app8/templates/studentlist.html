@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block title %} Student List {% endblock %}
+{% block content %}
+    <a href='{% url 'home'%}'> Back to homepage </a>
+    <center>
+        <h1>Student List </h1>
+        <table border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Student USN</th>
+                <th>Student Sem</th>
+            </tr>
+            {% for student in students %}
+                <tr>
+                    <td>{{student.name}}</td>
+                    <td>{{student.usn}}</td>
+                    <td>{{student.sem}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+{% endblock %}

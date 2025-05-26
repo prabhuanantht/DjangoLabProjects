@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> {% block title %} Page Title {% endblock %} </title>
+    </head>
+    <body>
+        <div style="display:flex; justify-content:center; padding:10px; border-bottom: 1px solid #ccc">
+            <nav>
+                <a href='/home/' style = "margin-right:20px;"> Home </a>
+                <a href='/about/' style = "margin-right:20px;"> About Us </a>
+                <a href='/contact/' style = "margin-right:20px;"> Contact Us </a>
+            </nav>
+        </div>
+        <div style = "min-height:90%">
+        {% block content %} Block content {% endblock %}
+        </div>
+        <footer><center> <hr> &copy; Designed and Developed by Ananth </hr> </center></footer>
+    </body>
+</html>

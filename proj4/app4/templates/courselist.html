@@ -1,0 +1,7 @@
+{% extends 'layout.html'%}
+{% block title %} Course List {% endblock %}
+{% block content %}
+    {% for course in course_list %}
+        <p> {{course.name}} - {{course.code}} - {{course.credits}} </p>
+    {% endfor %}
+{% endblock %}
